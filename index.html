@@ -35,14 +35,48 @@
 
     <!-- css link START here -->
     <style>
-
+        .font-lato{
+            font-family: 'Lato', sans-serif;
+        }
     </style>
     <!-- css link END here -->
 </head>
-<body>
+<body class="font-lato">
     <!-- Header section START here -->
-    <header>
-
+    <header class="w-4/5 my-10 mx-auto bg-[#fff] md:bg-[#F85559] rounded-full px-5">
+        <!-- navbar collect from deisy UI START here -->
+        <div class="h-24 flex justify-between items-center">
+            <div class="">
+              <div class="dropdown">
+                <label tabindex="0" class="btn btn-ghost lg:hidden">
+                    <i class="fa-solid fa-bars text-4xl"></i>
+                </label>
+                <ul tabindex="0" class="menu menu-sm text-black md:text-white text-lg font-medium dropdown-content mt-3 z-[1] p-2">
+                  <li><a>Home</a></li>
+                  <li><a>About Us</a></li>
+                  <li><a>Shop</a></li>
+                  <li><a>All Fruits</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+              <ul class="menu menu-horizontal px-1 text-black md:text-white text-lg font-medium">
+                <li><a>Home</a></li>
+                <li><a>About Us</a></li>
+                <li><a>Shop</a></li>
+                <li><a>All Fruits</a></li>
+              </ul>
+            </div>
+            <div  class="flex items-center gap-2">
+                <img src="images/logo.png" alt="">
+                <a class="font-bold text-black md:text-white text-3xl ">Fruit Burst</a>
+            </div>
+            <div class="hidden lg:block relative">
+                <input type="text" placeholder="Search" class="input input-bordered w-24 md:w-auto rounded-full"/>
+                <span><i class="fa-solid fa-magnifying-glass text-2xl absolute top-2 right-5 text-center"></i></span>
+            </div>
+          </div>
+        <!-- navbar collect from deisy UI END here -->
     </header>
     <!-- Header section END here -->
 
