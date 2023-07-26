@@ -38,12 +38,17 @@
         .font-lato{
             font-family: 'Lato', sans-serif;
         }
+        .clear::after{
+          clear: both;
+          content: '';
+          display: block;
+        }
     </style>
     <!-- css link END here -->
 </head>
 <body class="font-lato">
     <!-- Header section START here -->
-    <header class="w-4/5 my-10 mx-auto ">
+    <header class="w-4/5 my-10 mx-auto">
         <!-- navbar collect from deisy UI START here -->
         <div class="h-24 flex flex-row-reverse md:flex-row justify-between items-center bg-[#fff] md:bg-[#F85559] rounded-full px-5">
               <div class="dropdown">
@@ -206,11 +211,70 @@
       <!-- bonus section START here -->
         </div>
     </header>
+    <div class="clear"></div>
     <!-- Header section END here -->
 
     <!-- Main section START here -->
     <main>
+      <!-- Deal of the day section START here -->
+      <section class="w-4/5 my-12 lg:my-44 mx-auto">
+        <!-- text section START here -->
+        <div class="flex flex-col md:flex-row justify-between items-center p-5">
+          <!-- text -->
+          <div class="text-center mb-2 space-y-3 md:text-left">
+            <h2 class="flex-1 text-3xl text-[#121212] font-extrabold">Deal of the day</h2>
+            <p class="font-medium text-[#12121299] mr-5">Contrary to popular belief, is not simply random text. It has roots in a piece of classical
+               Latin literature from 45 BC, making it over 2000 years old.</p>
+          </div>
+          <!-- text -->
+          <!-- coundown -->
+            <div class="flex-1">
+              <div class="flex gap-4 justify-center items-center">
+                <!-- Days -->
+              <div class="flex items-center justify-end gap-5">
+                <div>
+                  <h4 class="text-2xl font-extrabold">29</h4>
+                  <p class="text-sm font-medium text-[#121212]">Days</p>
+                </div>
+              <i class="fa-solid fa-ellipsis-vertical text-xl"></i>
+            </div>
+            <!-- Days -->
 
+            <!-- Hours -->
+            <div class="flex items-center justify-end gap-5">
+              <div>
+                <h4 class="text-2xl font-extrabold">15</h4>
+                <p class="text-sm font-medium text-[#121212]">Hours</p>
+              </div>
+            <i class="fa-solid fa-ellipsis-vertical text-xl"></i>
+          </div>
+            <!-- Hours -->
+
+            <!-- Minutes -->
+            <div class="flex items-center justify-end gap-5">
+              <div>
+                <h4 class="text-2xl font-extrabold">25</h4>
+                <p class="text-sm font-medium text-[#121212]">Minutes
+              </div>
+            <i class="fa-solid fa-ellipsis-vertical text-xl"></i>
+          </div>
+            <!-- Minutes -->
+
+            <!-- second -->
+            <div class="flex items-center justify-end gap-5">
+              <div>
+                <h4 class="text-2xl font-extrabold">08</h4>
+                <p class="text-sm font-medium text-[#121212]">Seconds
+              </div>
+          </div>
+            <!-- second -->
+              </div>
+            </div>
+          <!-- coundown -->
+        </div>
+        <!-- text section START here -->
+      </section>
+      <!-- Deal of the day section END here -->
     </main>
     <!-- Main section END here -->
 
